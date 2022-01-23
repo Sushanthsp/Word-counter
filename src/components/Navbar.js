@@ -25,12 +25,7 @@ function Navbar(props)
           <Link className="nav-link" to="/AboutUs">{props.about}</Link>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
-              </form>
-              
-              <div className={`form-check form-switch mx-2 text-${props.mode === 'dark'?'light':'dark'}`}>
+      <div className={`form-check form-switch mx-2 text-${props.mode === 'dark'?'light':'dark'}`}>
               
          <input className="form-check-input " onClick={props.toggle} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
          <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Enable dark mode</label>
