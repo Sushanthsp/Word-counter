@@ -2,9 +2,9 @@ import Navbar from './components/Navbar';
 import TextForms from './components/TextForms'
 import './App.css';
 import AboutUs from './components/AboutUs';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import Alerts from './components/Alerts';
-import {
+import { 
   BrowserRouter as Router,
   Switch,
   Route,
