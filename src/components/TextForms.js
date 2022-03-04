@@ -84,7 +84,8 @@ export default function TextForms(props) {
                 <h2 className="classname my-4"> Your text summary</h2> 
                 <p> your text has {text.length} characters and it has { text.split(' ').filter((e)=> e.length > 1).length} words</p>
                 <h2 className="classname my-4"> Average read time</h2> 
-                <p>{.008 * text.split(' ').filter((e)=> e.length > 1).length} min</p>
+                {/* // eslint-disable-next-line */}
+                {<p>{.008 * text.split(' ').filter((e)=> e.length > 1).length} min</p>}  
                 <h2 className="classname my-4"></h2> 
                 <p>{text.length> 0 ? text: "Enter something inside the container to preview your text!!"}</p>            
     </div>    
